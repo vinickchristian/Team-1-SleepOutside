@@ -311,3 +311,21 @@ footer {
   border-top: 1px solid var(--tertiary-color);
   padding: 1em;
 }
+
+.hide {
+  display: none;
+}
+
+.cart-footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 2px solid var(--light-grey);
+  text-align: right; /* Alinea el total a la derecha */
+}
+
+.cart-total {
+  font-size: var(--large-font);
+  font-weight: bold;
+  color: var(--dark-grey);
+  margin: 0;
+}
