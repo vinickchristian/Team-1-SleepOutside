@@ -1,6 +1,9 @@
 // vite.config.js
-import { resolve } from 'path';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
 import { defineConfig } from 'vite';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   root: 'src/',
@@ -12,6 +15,7 @@ export default defineConfig({
         main: resolve(__dirname, 'src/index.html'),
         cart: resolve(__dirname, 'src/cart/index.html'),
         checkout: resolve(__dirname, 'src/checkout/index.html'),
+        productListing: resolve(__dirname, 'src/product_listing/index.html'),
         product1: resolve(
           __dirname,
           'src/product_pages/cedar-ridge-rimrock-2.html',
